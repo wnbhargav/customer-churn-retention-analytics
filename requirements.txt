@@ -1,0 +1,5 @@
+duckdb
+pandas
+numpy
+jupyter
+matplotlib
