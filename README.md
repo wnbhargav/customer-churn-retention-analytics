@@ -148,5 +148,6 @@ python init_db.py
 python run_sql.py
 
 # Open EDA notebook
-jupyter notebook notebooks/churn_analysis.ipynb
+notebooks/churn_analysis.ipynb
+
 
