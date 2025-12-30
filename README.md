@@ -123,7 +123,7 @@ customer-churn-analytics/
 ## 📸 Results 
 
 ### SQL KPI Output
-![customer-churn-retention-analytics](screenshots/sql_kpi_output.png)
+![SQL_KPI_Output](Screenshots/sql_kpi_output.png)
 
 ### Churn by Tenure
 ![Churn by Tenure](screenshots/tenure_churn_analysis.png)
@@ -154,6 +154,7 @@ python run_sql.py
 
 # Open EDA notebook
 notebooks/churn_analysis.ipynb
+
 
 
 
