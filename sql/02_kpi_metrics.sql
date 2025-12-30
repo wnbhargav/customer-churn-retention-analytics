@@ -1,7 +1,7 @@
--- ==============================
+
 -- 02_kpi_metrics.sql
 -- Purpose: Core churn KPIs + churn drivers + revenue at risk
--- ==============================
+
 
 -- 1) Overall KPIs
 SELECT
@@ -12,7 +12,7 @@ SELECT
   ROUND(AVG(total_revenue), 2) AS avg_total_revenue
 FROM customers;
 
--- 2) Revenue at risk (simple + readable)
+-- 2) Revenue at risk (simple & readable)
 SELECT
   ROUND(SUM(CASE WHEN churn = 1 THEN monthly_fee ELSE 0 END), 2) AS monthly_revenue_at_risk,
   ROUND(SUM(CASE WHEN churn = 1 THEN total_revenue ELSE 0 END), 2) AS total_revenue_at_risk,

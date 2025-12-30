@@ -1,7 +1,7 @@
--- ==============================
+
 -- 01_create_tables.sql
 -- Robust loader for mixed boolean/string columns
--- ==============================
+
 
 DROP TABLE IF EXISTS customers_stg;
 DROP TABLE IF EXISTS customers;
@@ -11,7 +11,7 @@ CREATE TABLE customers_stg AS
 SELECT *
 FROM read_csv_auto('data/customer_churn_business_dataset.csv', header=true);
 
--- 2) Final: create a clean table with consistent types
+-- 2) Final: creating a clean table with consistent types
 CREATE TABLE customers AS
 SELECT
   CAST(customer_id AS VARCHAR)            AS customer_id,
@@ -37,7 +37,7 @@ SELECT
   CAST(payment_method AS VARCHAR)         AS payment_method,
   CAST(payment_failures AS INTEGER)       AS payment_failures,
 
-  -- ✅ robust boolean casting: works for true/false AND yes/no/1/0
+  --  Boolean casting: works for true/false AND yes/no/1/0
   CASE
     WHEN lower(CAST(discount_applied AS VARCHAR)) IN ('true','t','1','yes','y') THEN TRUE
     WHEN lower(CAST(discount_applied AS VARCHAR)) IN ('false','f','0','no','n') THEN FALSE

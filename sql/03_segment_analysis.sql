@@ -1,7 +1,7 @@
--- ==============================
+
 -- 03_segment_analysis.sql
--- Purpose: Identify HIGH-RISK segments + actionable target lists
--- ==============================
+-- Identify HIGH-RISK segments & actionable target lists
+
 
 -- 1) Build a risk segmentation view (rule-based, business-friendly)
 WITH scored AS (
