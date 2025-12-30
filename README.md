@@ -126,13 +126,13 @@ customer-churn-analytics/
 ![SQL_KPI_Output](Screenshots/sql_kpi_output.png)
 
 ### Churn by Tenure
-![Churn by Tenure](screenshots/tenure_churn_analysis.png)
+![Churn by Tenure](Screenshots/tenure_churn_analysis.png)
 
 ### Engagement vs Churn
-![Engagement vs Churn](screenshots/engagement_vs_churn.png)
+![Engagement vs Churn](Screenshots/engagement_vs_churn.png)
 
 ### Revenue at risk
-![Revenue at risk](screenshots/revenue_at_risk.png)
+![Revenue at risk](Screenshots/revenue_at_risk.png)
 
 ---
 
@@ -154,6 +154,7 @@ python run_sql.py
 
 # Open EDA notebook
 notebooks/churn_analysis.ipynb
+
 
 
 
