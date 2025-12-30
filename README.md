@@ -120,14 +120,19 @@ customer-churn-analytics/
 
 ---
 
-## 📸 Results & Visualizations
+## 📸 Results 
 
-Screenshots of:
-- SQL KPI outputs  
-- Pandas EDA charts  
-- Dashboards  
+### SQL KPI Output
+![SQL KPI Output](screenshots/sql_kpi_output.png)
 
-*(To be added)*
+### Churn by Tenure
+![Churn by Tenure](screenshots/tenure_churn_analysis.png)
+
+### Engagement vs Churn
+![Engagement vs Churn](screenshots/engagement_vs_churn.png)
+
+### Revenue at risk
+![Revenue at risk](screenshots/revenue_at_risk.png)
 
 ---
 
@@ -149,5 +154,6 @@ python run_sql.py
 
 # Open EDA notebook
 notebooks/churn_analysis.ipynb
+
 
 
